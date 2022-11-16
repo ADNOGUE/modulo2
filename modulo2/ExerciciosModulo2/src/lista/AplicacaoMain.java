@@ -41,18 +41,19 @@ public class AplicacaoMain {
         System.out.println("lista agrupada" + listaAgrupada);
 
 
-        Collection<Lista> listaSemDuplicado = new HashSet();
-        listaSemDuplicado.add(new Lista(list1));
-        listaSemDuplicado.add(new Lista(list2));
+        Set<Integer> listasemduplicado = new HashSet<>();
+        listasemduplicado.addAll(listaAgrupada);
 
-        System.out.println("listasemduplicado" +listaSemDuplicado);
-
+        System.out.println("listasemduplicado" +listasemduplicado);
 
 
-       List listFinal = Arrays.asList(listaSemDuplicado.toArray());
+
+
+
+       List listFinal = Arrays.asList(listasemduplicado.toArray());
        // List list5 = new ArrayList(Integer.valueOf(listFinal.toString()));
-       // ordenacao(listFinal);
-     //  Collections.sort(listFinal);
+        ordenacao(listFinal);
+       Collections.sort(listFinal);
 
         System.out.println(listFinal);
      //   System.out.println(list5);
