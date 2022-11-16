@@ -6,26 +6,12 @@ public class AplicacaoMain {
 
     public static void main(String[] args) {
 
-    //    ArrayList<Integer> list1 = new ArrayList<>(
-    //              Arrays.asList(1, 2, 3, 4, 5));
+        ArrayList<Integer> list1 = new ArrayList<>(
+                  Arrays.asList(1, 2, 3, 4, 5));
 
-        ArrayList<Integer> list1 = new ArrayList<>();
-            list1.add(1);
-            list1.add(2);
-            list1.add(3);
-            list1.add(4);
-            list1.add(5);
+        ArrayList<Integer> list2 = new ArrayList<>(
+                  Arrays.asList( 2, 5));
 
-        System.out.println(list1);
-
-        ArrayList<Integer> list2 = new ArrayList<>();
-        list2.add(2);
-        list2.add(5);
-
-       // ArrayList<Integer> list2 = new ArrayList<>(
-      //          Arrays.asList( 2, 5));
-
-        System.out.println(list2);
 
 
         List<Integer> listaAgrupada
@@ -35,8 +21,6 @@ public class AplicacaoMain {
         listaAgrupada.addAll(list1);
         listaAgrupada.addAll(list2);
 
-        Collections.sort(listaAgrupada);
-        ordenacao(listaAgrupada);
 
         System.out.println("lista agrupada" + listaAgrupada);
 
@@ -47,16 +31,21 @@ public class AplicacaoMain {
         System.out.println("listasemduplicado" +listasemduplicado);
 
 
+        List listFinal = Arrays.asList(listasemduplicado.toArray());
 
+      //  Collection<Lista> listas = new HashSet();
+      // listas.add(new Lista(listFinal));
 
+      //      ordenacao(listFinal);
+      //  System.out.println("Resultado Final1: " +listFinal);
 
-       List listFinal = Arrays.asList(listasemduplicado.toArray());
-       // List list5 = new ArrayList(Integer.valueOf(listFinal.toString()));
-        ordenacao(listFinal);
-       Collections.sort(listFinal);
+     //   Collections.sort(listFinal);
+     //   System.out.println("Resultado Final2: " +listFinal);
 
-        System.out.println(listFinal);
-     //   System.out.println(list5);
+        Collections.reverse(listFinal);
+
+        System.out.println("Resultado Final: " +listFinal);
+
 
 
 

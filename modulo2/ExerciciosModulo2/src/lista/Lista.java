@@ -34,7 +34,7 @@ public class Lista implements Comparable<Lista> {
 
     @Override
     public int compareTo(Lista obj) {
-     //   return obj.getNumero().compareTo(this.numero);
+    //    return obj.getNumero().compareTo(this.numero);
        return this.numero.compareTo(obj.getNumero());
 
     }
